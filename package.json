@@ -1,0 +1,23 @@
+{
+  "name": "als",
+  "version": "0.0.1",
+  "description": "AI models that can learn actively",
+  "main": "model.js",
+  "type": "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "synaptic": "^1.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "response": "node ./tests/response.js",
+    "learn": "node ./tests/learn.js"
+  },
+  "keywords": [
+    "model"
+  ],
+  "author": "SoTeen Studio",
+  "license": "MIT"
+}

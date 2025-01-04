@@ -1,5 +1,5 @@
 {
-  "name": "als",
+  "name": "@soteen/als-model",
   "version": "0.0.1",
   "description": "AI models that can learn actively",
   "main": "model.js",

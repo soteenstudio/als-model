@@ -1,5 +1,8 @@
 # ALS Model
 ALS Model is an artificial intelligence model equipped with active learning.
+
+> **Caution:** This model is still in development and far from perfect.
+
 # Get Started
 ## Installation and Running
 ```

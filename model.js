@@ -16,7 +16,7 @@ export class ALSModel {
     this.model.train(datasetJson);
   }
   
-  response(input) {
+  async response(input) {
     const user = input.user;
     const prompt = input.prompt;
     

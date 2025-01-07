@@ -1,5 +1,5 @@
 # Active Learning System(ALS) Model
-**Active Learning System(ALS)** model is an artificial intelligence model equipped with active learning.
+**Active Learning System(ALS) model** is an artificial intelligence model equipped with active learning.
 
 > **Caution:** This model is still under development and far from perfect. Please use it wisely.
 

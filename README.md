@@ -1,20 +1,30 @@
-# ALS Model
-ALS Model is an artificial intelligence model equipped with active learning.
+# Active Learning System(ALS) Model
+**Active Learning System(ALS)** model is an artificial intelligence model equipped with active learning.
 
-> **Caution:** This model is still in development and far from perfect.
+> **Caution:** This model is still under development and far from perfect. Please use it wisely.
 
 # Get Started
-## Installation and Running
+Follow the simple steps below to start using this model:
+## Installation
+Use npm to install packages:
 ```
 npm install @soteen/als-model
 ```
+## Import
+Import the ``@soteen/als-model`` module into your project:
 ```javascript
 import { ALSModel } from '@soteen/als-model';
 ```
-## Using
+## Initialization and Usage
+Here is an example of a simple implementation:
 ```javascript
+// Initialize an instance of the ALSModel class
 const model = new ALSModel();
 
+
+// Send prompts and get responses
 const result = model.response({ user: 'guess', prompt: 'How are you?' });
+
+// Show response results in console
 console.log(result.details.response);
 ```

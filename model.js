@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { pathToDataset } from './lib/utils/index.js';
 import { Model } from './lib/index.js';
 
 let datasetJson;

@@ -1,6 +1,7 @@
 import fs from 'fs';
 import { pathToDataset } from './lib/utils/index.js';
 import { Model } from './lib/index.js';
+import { normalizedText } from './lib/utils/index.js';
 
 let datasetJson;
 try {
@@ -11,24 +12,31 @@ try {
 }
 
 export class ALSModel {
-  constructor(option) {
+  constructor(apiKey) {
+    this.apiKey = apiKey;
     this.model = new Model();
     this.model.train(datasetJson);
   }
   
   async response(input) {
     const user = input.user;
-    const prompt = input.prompt;
+    const prompt = normalizedText(input.prompt);
+    const model = input.model;
     
-    const response = this.model.predict(prompt);
-    
-    return {
-      user: user,
-      details: {
-        prompt: prompt,
-        response: response
-      }
-    };
+    if (model === "ALS-v0.1-alpha") {
+      const response = this.model.predict(prompt);
+      
+      return {
+        user: user,
+        details: {
+          prompt: prompt,
+          response: response
+        }
+      };
+    } else {
+      console.log("Sorry, model not found.");
+      return '';
+    }
   }
   
   learn(lesson) {

@@ -1,9 +1,0 @@
-src/
-node_modules/
-tes.*
-tests/
-website/
-*.tgz
-*.ts
-!*.d.ts
-tsconfig.json

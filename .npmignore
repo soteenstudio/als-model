@@ -1,7 +1,9 @@
-dist/
+src/
 node_modules/
 tes.*
 tests/
 website/
 *.tgz
-*.d.ts
+*.ts
+!*.d.ts
+tsconfig.json

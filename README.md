@@ -19,7 +19,10 @@ import { ALSModel } from '@soteen/als-model';
 Here is an example of a simple implementation:
 ```javascript
 // Initialize an instance of the ALSModel class
-const model = new ALSModel();
+const model = new ALSModel({
+  model: "ALS-v0.1-alpha",
+  maxLength: 12
+});
 
 
 // Send prompts and get responses

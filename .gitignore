@@ -1,7 +1,10 @@
 dist/
+dist/data
 node_modules/
 tes.*
 tests/
 website/
 *.tgz
 *.d.ts
+*.js
+.npmignore
